@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Neuton } from "next/font/google";
+import { TASA_Orbiter } from "next/font/google";
 import "./globals.css";
 
-const neuton = Neuton({
+const tasa = TASA_Orbiter({
   variable: "--font-neuton",
   subsets: ["latin"],
-  weight: ["200", "300", "400", "700", "800"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${neuton.variable} antialiased`}>{children}</body>
+      <body className={`${tasa.variable} antialiased`}>{children}</body>
     </html>
   );
 }
