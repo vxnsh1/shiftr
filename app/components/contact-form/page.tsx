@@ -19,16 +19,8 @@ const Page = () => {
           <div className="w-full h-full rounded-xl bg-[#F8F8F8] flex justify-between text-sm px-5 py-2">
             <div className="w-1/2 h-full flex flex-col justify-center font-semibold ">
               <span>Mail us at</span>
-              <span className="text-blue-600 cursor-pointer bg-red-500 overflow-hidden flex items-center">
-                <motion.span
-                  initial={{ y: 0 }}
-                  animate={{ y: -20 }}
-                  transition={{duration: 0.5, ease: "easeInOut"}}
-                  className="block"
-                  style={{ display: 'inline-block' }}
-                >
+              <span className="text-blue-600 cursor-pointer">
                   hello@example.com
-                </motion.span>
               </span>
             </div>
             <div className="flex items-center justify-center gap-2">
